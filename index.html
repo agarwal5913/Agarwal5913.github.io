@@ -4,9 +4,25 @@
         <link rel="stylesheet" href="styles.css"/>
     </head>
     <body>
-        <img src="https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png">
-        <h1>Prophet Orpheus</h1>
-        <p>Coder Dino</p>
-        <p>Will code for food</p>
+        <img id="mycroft" src="sherlock-mycroft-holmes-season-1.jpg" onmouseover="switchToJohnlock()" border="2" onmouseout="switchToDisapprovingMycroft()">
+        <h1 id="text1">Mycroft Holmes</h1>
+        <p id="text2">Will die for food</p>
+        <p id="text3"></p>
+    <script>
+    function switchToJohnlock()
+    {
+        document.getElementById("mycroft").src="johnlock.jpg";
+        document.getElementById("text1").innerHTML="Johnlock Takeover!";
+        document.getElementById("text2").innerHTML="No more Mycroft :)";
+        document.getElementById("text3").innerHTML="PS How is the diet?";
+    }
+        function switchToDisapprovingMycroft()
+    {
+        document.getElementById("mycroft").src="DisapprovingMycroft.gif";
+        document.getElementById("text1").innerHTML="Leave.";
+        document.getElementById("text2").innerHTML="";
+        document.getElementById("text3").innerHTML="";
+    }
+    </script>
     </body>
 </html>
